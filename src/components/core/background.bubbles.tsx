@@ -6,9 +6,17 @@ const BackgroundBubbles = ({ children }: any) => {
     <>
       <div className="bubbles body-dark">
         {children}
-        {
-          new Array(50).map(e => <div className="bubble"></div>)
-        }
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
       </div>
     </>
   );

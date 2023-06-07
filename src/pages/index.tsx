@@ -1,16 +1,13 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GithubIcon from '@mui/icons-material/GitHub';
 import * as React from 'react';
 import TopBar from '../components/core/appBar';
 import BackgroundBubbles from '../components/core/background.bubbles';
 import ProfileImg from '../images/profile.jpg';
+import { IndiaLogo } from '../components/core/svg';
 
 // styles
-const pageStyles = {
-  color: '#232129',
-  padding: 96,
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
 const headingAccentStyles = {
   color: '#8954A8',
 };
@@ -25,8 +22,8 @@ const linkStyle = {
 const IndexPage = () => {
   return (
     <BackgroundBubbles>
-      <TopBar />
-      <main style={pageStyles}>
+      {/* <TopBar /> */}
+      <main className='z-50 p-7'>
         <title>My Profile</title>
         <div className="grid grid-cols-2 gap-4 content-center">
           <div>
@@ -35,7 +32,10 @@ const IndexPage = () => {
               <br />
               <span style={headingAccentStyles}>— I'm Shivam!</span>
               <br />
-              <span style={headingAccentStyles}>From India</span>
+              <div className='flex'>
+                <span style={headingAccentStyles}>From India</span>
+                <IndiaLogo className='h-10 pl-3 pb-1' />
+              </div>
               <br />
               <span style={headingAccentStyles}>
                 Click{' '}
@@ -47,7 +47,7 @@ const IndexPage = () => {
             </h1>
           </div>
           <div className="my-0 mx-auto">
-            <img src={ProfileImg} className="h-1/2" alt="Shivam" />
+            <img src={ProfileImg} className="h-96 rounded-full" alt="Shivam" />
             <div style={headingAccentStyles} className="text-xl mt-5">
               This is me
             </div>
@@ -55,12 +55,14 @@ const IndexPage = () => {
               Wanna know more about me?
             </div>
             <div className="flex">
-              <a href="https://www.instagram.com/shivam.s_17/" target="_blank">
-                {/* <InstaLogo height="2rem" /> */}
-                <InstagramIcon fontSize='large' color='secondary' />
+              <a href="https://github.com/shivam178/" target="_blank">
+                <GithubIcon fontSize='large' color='secondary' />
               </a>
               <a href="https://www.linkedin.com/in/shivam-sharma178/" target="_blank">
                 <LinkedInIcon fontSize='large' color='secondary' />
+              </a>
+              <a href="https://www.instagram.com/shivam.s_17/" target="_blank">
+                <InstagramIcon fontSize='large' color='secondary' />
               </a>
             </div>
           </div>
