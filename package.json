@@ -1,0 +1,40 @@
+{
+  "name": "my-profile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-profile",
+  "author": "shivam sharma",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.4",
+    "autoprefixer": "^10.4.7",
+    "gatsby": "^4.16.0",
+    "gatsby-plugin-material-ui": "latest",
+    "gatsby-plugin-postcss": "^5.16.0",
+    "gatsby-plugin-sass": "^5.16.0",
+    "postcss": "^8.4.14",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.3",
+    "tailwindcss": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.7.3"
+  }
+}
