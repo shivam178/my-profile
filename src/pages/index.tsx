@@ -1,16 +1,8 @@
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GithubIcon from '@mui/icons-material/GitHub';
-import * as React from 'react';
-import TopBar from '../components/core/appBar';
+import React from 'react';
 import BackgroundBubbles from '../components/core/background.bubbles';
-import ProfileImg from '../images/profile.jpg';
+import BottomBar from '../components/core/bottomBar';
 import { IndiaLogo } from '../components/core/svg';
-
-// styles
-const headingAccentStyles = {
-  color: '#8954A8',
-};
+import ProfileImg from '../images/profile.jpg';
 
 const linkStyle = {
   color: '#663399',
@@ -23,21 +15,21 @@ const IndexPage = () => {
   return (
     <BackgroundBubbles>
       {/* <TopBar /> */}
-      <main className='z-50 p-7'>
+      <main className='z-50 p-7 h-full flex flex-col'>
         <title>My Profile</title>
-        <div className="grid grid-cols-2 gap-4 content-center">
+        <div className="grid md:grid-cols-2 gap-4 content-center sm:grid-cold-1">
           <div>
             <h1 className="mt-0 mb-10 text-3xl">
               Hello
               <br />
-              <span style={headingAccentStyles}>— I'm Shivam!</span>
+              <span>— I'm Shivam!</span>
               <br />
               <div className='flex'>
-                <span style={headingAccentStyles}>From India</span>
+                <span>From India</span>
                 <IndiaLogo className='h-10 pl-3 pb-1' />
               </div>
               <br />
-              <span style={headingAccentStyles}>
+              <span>
                 Click{' '}
                 <a style={linkStyle} href="/resume">
                   here
@@ -48,24 +40,13 @@ const IndexPage = () => {
           </div>
           <div className="my-0 mx-auto">
             <img src={ProfileImg} className="h-96 rounded-full" alt="Shivam" />
-            <div style={headingAccentStyles} className="text-xl mt-5">
+            <div className="text-xl mt-5 flex justify-center">
               This is me
             </div>
-            <div style={headingAccentStyles} className="mt-8">
-              Wanna know more about me?
-            </div>
-            <div className="flex">
-              <a href="https://github.com/shivam178/" target="_blank">
-                <GithubIcon fontSize='large' color='secondary' />
-              </a>
-              <a href="https://www.linkedin.com/in/shivam-sharma178/" target="_blank">
-                <LinkedInIcon fontSize='large' color='secondary' />
-              </a>
-              <a href="https://www.instagram.com/shivam.s_17/" target="_blank">
-                <InstagramIcon fontSize='large' color='secondary' />
-              </a>
-            </div>
           </div>
+        </div>
+        <div className='grid mt-auto'>
+          <BottomBar />
         </div>
       </main>
     </BackgroundBubbles>
