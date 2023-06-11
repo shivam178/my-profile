@@ -3,19 +3,14 @@ import BackgroundBubbles from '../components/core/background.bubbles';
 import BottomBar from '../components/core/bottomBar';
 import { IndiaLogo } from '../components/core/svg';
 import ProfileImg from '../images/profile.jpg';
-
-const linkStyle = {
-  color: '#663399',
-  fontWeight: 'bold',
-  verticalAlign: '5%',
-};
+import { AppContent } from '../components/core/appContent';
 
 // markup
 const IndexPage = () => {
   return (
     <BackgroundBubbles>
       {/* <TopBar /> */}
-      <main className='z-50 p-7 h-full flex flex-col'>
+      <AppContent>
         <title>My Profile</title>
         <div className="grid md:grid-cols-2 gap-4 content-center sm:grid-cold-1">
           <div>
@@ -31,10 +26,10 @@ const IndexPage = () => {
               <br />
               <span>
                 Click{' '}
-                <a style={linkStyle} href="/resume">
-                  here
+                <a href="/projects">
+                  <span>here</span>
                 </a>{' '}
-                to see my web resume.
+                to see my projects.
               </span>
             </h1>
           </div>
@@ -45,10 +40,10 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className='grid mt-auto md:pb-0 pb-5'>
+        <div className='grid mt-auto'>
           <BottomBar />
         </div>
-      </main>
+      </AppContent>
     </BackgroundBubbles>
   );
 };

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../../css/bubbles.scss' 
 
-const BackgroundBubbles = ({ children }: any) => {
+const BackgroundBubbles = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div className="bubbles body-dark">
