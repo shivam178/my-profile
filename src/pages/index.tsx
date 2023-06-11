@@ -45,7 +45,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className='grid mt-auto'>
+        <div className='grid mt-auto md:pb-0 pb-5'>
           <BottomBar />
         </div>
       </main>
