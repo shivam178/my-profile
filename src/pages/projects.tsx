@@ -56,17 +56,15 @@ const PreviousCompanies = () => {
               <div className="border rounded-lg p-5" key={index}>
                 <span className="font-semibold text-xl flex justify-center">{e.projectName}</span>
                 <div className="font-semibold text-xl mt-5">
-                  GitHub repo{' '}
                   <a target="_blank" href={e.githubRepo}>
-                    <span>here</span>
+                    <span>GitHub repo</span>
                   </a>
                   .
                 </div>
                 {e.deployedLink && (
                   <div className='mt-2'>
-                    Deployed{' '}
                     <a href={e.deployedLink} target="_blank">
-                      <span>here</span>
+                      <span>Test live</span>
                     </a>
                   </div>
                 )}

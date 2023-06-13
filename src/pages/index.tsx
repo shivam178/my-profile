@@ -25,11 +25,10 @@ const IndexPage = () => {
               </div>
               <br />
               <span>
-                Click{' '}
+                Check out my{' '}
                 <a href="/projects">
-                  <span>here</span>
-                </a>{' '}
-                to see my projects.
+                  <span>projects</span>
+                </a>
               </span>
             </h1>
           </div>
